@@ -1,12 +1,13 @@
 ```mermaid
 sequenceDiagram
-    participant user
+    actor user
     participant browser
     participant server
 
     user->>browser: Text Input
     activate browser
     destroy user
+    user-->>browser: clicked the Save button
     
     browser->>server: POST https://studies.cs.helsinki.fi/examples/new_note
     activate server
