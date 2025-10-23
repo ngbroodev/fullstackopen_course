@@ -6,7 +6,7 @@ sequenceDiagram
 
     user->>browser: Text Input
     activate browser
-    deactivate browser
+    destroy user
     
     browser->>server: POST https://studies.cs.helsinki.fi/examples/new_note
     activate server
