@@ -19,7 +19,6 @@ sequenceDiagram
     deactivate server
 
     create actor user
-    destroy user
     user->>browser: Text input
     user-->>browser: click "Save" button
     
