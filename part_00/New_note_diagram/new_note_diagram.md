@@ -6,6 +6,7 @@ sequenceDiagram
 
     user->>browser: Text Input
     activate browser
+    deactivate browser
     
     browser->>server: POST https://studies.cs.helsinki.fi/examples/new_note
     activate server
