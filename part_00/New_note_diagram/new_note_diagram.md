@@ -1,12 +1,18 @@
 ```mermaid
 sequenceDiagram
+    participant user
     participant browser
     participant server
 
+    user->>browser: Text Input
+    activate browser
+    
     browser->>server: POST https://studies.cs.helsinki.fi/examples/new_note
     activate server
     server-->>browser: HTML document
     deactivate server
+
+    Note right of browser: POST method requests the server address new_note
     
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
